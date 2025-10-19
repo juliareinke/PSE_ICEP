@@ -6,6 +6,17 @@ html, body {
 
 }
 
+a {
+    color: #fff !important; 
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+    a:hover {
+        color: #ffcc33;
+        text-decoration: none;
+    }
+
 .container-fluid, main {
     padding: 0 !important;
     margin: 0 !important;
@@ -45,70 +56,6 @@ html, body {
     padding-left: 5%;
     padding-right: 5%;
 }
-
-.index-hero {
-    position: relative;
-    background-color: #00285b;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    height: 80vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    padding: 0 2%;
-}
-
-    .index-hero img {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: 100%;
-        height: auto;
-        opacity: 0.4;
-        z-index: 1; 
-    }
-
-.index-title {
-    position: relative;
-    z-index: 2; 
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: white;
-    margin: 0 0 1rem 0;
-}
-
-.index-text {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    color: white;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding: 0 1rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.index-button {
-    position: relative;
-    z-index: 2;
-    background-color: #00285b; 
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-    .index-button:hover {
-        background-color: #001f45; 
-    }
 
 .index-div {
     background-color: #00285b;
@@ -200,3 +147,232 @@ html, body {
     padding-bottom: 1rem;
     margin: 0;
 }
+
+.carousel-item {
+    position: relative;
+    height: 85vh; 
+    overflow: hidden;
+    background-color: #00285b;
+}
+
+    .carousel-item img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        z-index: 0;
+    }
+
+.carousel-caption {
+    background: none !important;
+    position: absolute;
+    top: 35%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    margin-top: 3px;
+}
+
+.carousel-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
+}
+
+.carousel-caption p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
+}
+
+/* Botão do carrossel com cor correta já no estado normal */
+.carousel-caption .btn {
+    background: #00285b !important;
+    color: #fff !important;
+    border: none;
+    padding: .75rem 2rem;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+    .carousel-caption .btn:hover {
+        background: #001f45 !important;
+        color: #fff !important;
+    }
+
+
+.section-full {
+    min-height: 85vh;
+    width: 100%;
+    background-color: #1a4279; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+    .section-full h1 {
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-full h2 {
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    .section-full p {
+        max-width: 800px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin: 0 auto 1rem;
+    }
+
+    .section-full blockquote {
+        max-width: 600px;
+        margin: 2rem auto 0;
+        font-style: italic;
+        color: #d1d1d1;
+    }
+
+.section-full a {
+    color: #ffcc33 !important;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.section-full a:hover {
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+.section-split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    width: 100%;
+    background-color: #1a4279;
+    color: #fff;
+    padding: 4rem 5%;
+    gap: 3rem;
+    flex-wrap: wrap; 
+}
+
+.section-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+    .section-text h1 {
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-text h2 {
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    .section-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    .section-text blockquote {
+        margin-top: 2rem;
+        font-style: italic;
+        color: #d1d1d1;
+    }
+
+.section-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+    .section-image img {
+        width: 100%;
+        max-width: 720px;
+        max-height: 70vh;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        object-fit: cover;
+    }
+
+.edge-to-edge {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+@media (max-width: 992px) {
+    .section-split {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-text {
+        text-align: left;
+        max-width: 700px;
+    }
+
+    .section-image img {
+        max-height: 50vh;
+    }
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #00336f !important;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 0;
+    min-width: 260px;
+}
+
+    .navbar-custom .dropdown-menu .dropdown-item {
+        background: transparent !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        padding: .6rem 1rem;
+        transition: background-color .2s, color .2s;
+    }
+
+        .navbar-custom .dropdown-menu .dropdown-item:hover,
+        .navbar-custom .dropdown-menu .dropdown-item:focus {
+            background-color: #001f45 !important;
+            color: #ffcc33 !important;
+        }
+
+        .navbar-custom .dropdown-menu .dropdown-item.active,
+        .navbar-custom .dropdown-menu .dropdown-item:active {
+            background-color: #001f45 !important;
+            color: #ffcc33 !important;
+            outline: none !important;
+        }
