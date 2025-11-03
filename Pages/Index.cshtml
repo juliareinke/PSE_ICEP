@@ -24,7 +24,7 @@
             var slide = Model.Slides[i];
             <div class="carousel-item @(i == 0 ? "active" : "")">
                 <img src="@slide.ImagePath" class="d-block w-100" alt="@slide.Title">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h1 class="carousel-title">@slide.Title</h1>
                     <p>@Html.Raw(slide.Description)</p>
                     <a asp-page="@slide.Link" class="btn">Saiba mais</a>
