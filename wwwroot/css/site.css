@@ -105,19 +105,21 @@ a {
     padding: 2rem 5%;
 }
 
-.info-logo {
-    flex: 0 0 10%;
+@media (max-width: 992px) {
+    .info-section {
+        flex-direction: column;
+    }
 }
 
-    .info-logo img {
-        max-width: 80px;
-        height: auto;
-    }
+.info-logo img {
+    max-width: 80px;
+    height: auto;
+}
 
-.info-location {
-    flex: 0 0 65%;
-    text-align: start;
-    font-size: 1.1rem;
+@media (max-width: 992px) {
+    .info-logo img {
+        display: none;
+    }
 }
 
 .info-icons {
