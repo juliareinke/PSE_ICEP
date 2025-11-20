@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+Ôªøusing Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
@@ -23,22 +23,22 @@ namespace PSE_ICEP.Pages
                  new Slide
                 {
                     ImagePath = "/images/transformando-geracoes.png",
-                    Title = "TRANSFORMANDO GERA«’ES",
-                    Description = "Cremos que o evangelho È o poder de Deus para transformar vidas e famÌlias. Neste ano, somos desafiados a viver uma fÈ que inspira e ensina a nova geraÁ„o a andar com Cristo, moldando coraÁıes e histÛrias segundo a Palavra.",
+                    Title = "TRANSFORMANDO GERA√á√ïES",
+                    Description = "Cremos que o evangelho √© o poder de Deus para transformar vidas e fam√≠lias. Neste ano, somos desafiados a viver uma f√© que inspira e ensina a nova gera√ß√£o a andar com Cristo, moldando cora√ß√µes e hist√≥rias segundo a Palavra.",
                     Link = "/TransformandoGeracoes"
                 },
                 new Slide
                 {
                     ImagePath = "/images/zelo-escrituras.png",
                     Title = "ZELO PELAS ESCRITURAS",
-                    Description = "Cremos que a Palavra de Deus È viva, suficiente e inspirada pelo EspÌrito Santo. Como igreja, buscamos crescer no conhecimento das Escrituras, para que nossa fÈ seja firmada na verdade e nossa pr·tica reflita a vontade do Senhor.",
+                    Description = "Cremos que a Palavra de Deus √© viva, suficiente e inspirada pelo Esp√≠rito Santo. Como igreja, buscamos crescer no conhecimento das Escrituras, para que nossa f√© seja firmada na verdade e nossa pr√°tica reflita a vontade do Senhor.",
                     Link = "/Teologia"
                 },
                 new Slide
                 {
                     ImagePath = "/images/ainda-ha-lugar.png",
-                    Title = "AINDA H¡ LUGAR",
-                    Description = "Jesus convida todos a se achegarem a Ele. O projeto Ainda H· Lugar È um movimento evangelÌstico da ICE que leva a mensagem do evangelho com amor, esperanÁa e verdade, para que mais pessoas encontrem salvaÁ„o em Cristo.",
+                    Title = "AINDA H√Å LUGAR",
+                    Description = "Jesus convida todos a se achegarem a Ele. O projeto Ainda H√° Lugar √© um movimento evangel√≠stico da ICE que leva a mensagem do evangelho com amor, esperan√ßa e verdade, para que mais pessoas encontrem salva√ß√£o em Cristo.",
                     Link = "/Evangelizacao"
                 }
             };
